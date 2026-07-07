@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Segurança Digital para Idosos</title>
+    <style>
+        /* --- ESTILOS GERAIS E ACESSIBILIDADE --- */
+        :root {
+            --azul-escuro: #003780;
+            --azul-claro: #EBF3FC;
+            --azul-borda: #0D47A1;
+            --amarelo-ouro: #FFC72C;
+            --vermelho-alerta: #D32F2F;
+            --vermelho-hover: #B71C1C;
+            --cinza-fundo: #F4F6F9;
+            --texto-escuro: #1A1A1A;
+            --texto-suave: #4A4A4A;
+            --branco: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--cinza-fundo);
+            color: var(--texto-escuro);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* --- CABEÇALHO (Combina com a imagem fornecida) --- */
+        .cabecalho {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 45px 20px;
+            border-bottom: 8px solid var(--amarelo-ouro);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .cabecalho h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .cabecalho p {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        /* --- BOTÃO DE EMERGÊNCIA PRINCIPAL --- */
+        .btn-emergencia-gatilho {
+            display: inline-block;
+            background-color: var(--vermelho-alerta);
+            color: var(--branco);
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 18px 45px;
+            border: 3px solid var(--branco);
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(211, 47, 47, 0.4);
+            transition: all 0.2s ease-in-out;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-emergencia-gatilho:hover {
+            background-color: var(--vermelho-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(211, 47, 47, 0.5);
+        }
+
+        .btn-emergencia-gatilho:active {
+            transform: translateY(1px);
+        }
+
+        /* --- CONTEÚDO PRINCIPAL (Dicas do Guia) --- */
+        .conteudo {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .titulo-secao {
+            font-size: 2rem;
+            color: var(--azul-escuro);
+            margin-bottom: 25px;
+            padding-bottom: 8px;
+            border-bottom: 4px solid var(--amarelo-ouro);
+            display: inline-block;
+        }
+
+        .cartao-dica {
+            background-color: var(--branco);
+            border-left: 10px solid var(--azul-borda);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .cartao-dica:hover {
